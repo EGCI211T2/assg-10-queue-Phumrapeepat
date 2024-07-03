@@ -38,7 +38,7 @@ int Queue::dequeue(){
      NodePtr t=headPtr;
      int value= t->get_value();
     headPtr=headPtr->get_next();
-    size--;
+    --size;
     if(headPtr==NULL) tailPtr=headPtr;
           
      delete t;
@@ -65,7 +65,7 @@ Queue::~Queue(){
       value=t->get_value();
       headPtr=headPtr->get_next();
 
-      cout<<"Dequeing"<<value<<endl;
+      cout<<"Dequeing "<<value<<endl;
       delete t;
     }
     
