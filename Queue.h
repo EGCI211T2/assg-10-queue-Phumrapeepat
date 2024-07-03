@@ -59,7 +59,7 @@ Queue::~Queue(){
     //delete all remaning Queue (i.e. DQ all) 
     int value;
     NodePtr t;
-    cout<<"Clearing Queue"<<endl;
+    cout<<"Clearing queue"<<endl;
     for(int i=0;i<size;i++){
       t=headPtr;
       value=t->get_value();
